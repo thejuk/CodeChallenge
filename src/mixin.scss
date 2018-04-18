@@ -1,0 +1,67 @@
+@mixin accordion-icon() {
+  background-repeat: no-repeat;
+  background-size: 60px 20px;
+  background-position: left;
+}
+
+@mixin colorBar-css() {
+  width: 22px;
+  height: 6px;
+  margin-top: 17px;
+}
+
+@mixin timeline-icon() {
+  height: 65px;
+  background-size: 80px 65px;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+@mixin timeline-vertical-line() {
+  position: absolute;
+  border: 1px solid $black;
+  width: 0;
+  height: 149%;
+  display: block;
+  content: '';
+  left: 50%;
+  z-index: 1;
+  top: -96px;
+  margin-left: -1px;
+}
+
+@mixin color-legend() {
+  color: $black;
+  font-size: 11px;
+  text-align: center;
+
+  .legend-item {
+    display: inline-block;
+    margin-right: 1%;
+    width: 32.3%;
+  }
+
+  .block {
+    display: inline-block;
+    height: 7px;
+    margin-right: 5%;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    width: 20px;
+
+    &.green {
+      background-color: $green;
+    }
+
+    &.yellow {
+      background-color: $yellow;
+    }
+
+    &.pink {
+      background-color: $pink;
+    }
+  }
+}
